@@ -1,0 +1,23 @@
+<h1>Here are some hipster words you probably never even heard of.. </h1>
+<div id="app">
+
+<div v-for="hipster in hipsters">
+	<p>Word: {{ hipster.word }}	</p>
+	<p>Sentence: {{ hipster.sentence }}	</p>
+	<p>Paragraph: {{ hipster.paragraph }}	</p>
+	<br>
+</div>
+<br>
+	
+<h1>Give it a shot, if you think you have what it takes..</h1>
+	<div>
+		Word: <input type="text" v-model="newHipsterWord">
+	</div>
+	<div>
+		Sentence: <input type="text" v-model="newHipsterSentence">
+	</div>
+	<div>
+		Paragraph: <input type="text" v-model="newHipsterParagraph">
+	</div>
+	
+</div>
